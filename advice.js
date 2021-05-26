@@ -10,8 +10,8 @@ async function getNewAdvice()
     then(res => res.text()).then(data=> changeGlobalAdvice(data));
 }
 async function changeGlobalAdvice(res)
-{   console.log(res);
-    var globalAdvice = JSON.parse(res).slip.advice;
+{    console.log(res);
+     var globalAdvice = JSON.parse(res).slip.advice;
         document.getElementById("mainText").innerHTML = '"' + globalAdvice + '"';
         
 }
