@@ -1,4 +1,4 @@
-pdateAdviceOnSite();
+updateAdviceOnSite();
 async function updateAdviceOnSite()
 {
     document.getElementById("mainText").innerHTML ="Loading . . ."
