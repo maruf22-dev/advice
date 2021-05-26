@@ -1,5 +1,4 @@
-
-document.getElementById("mainText").innerHTML = "Don't get admitted to NSU";
+pdateAdviceOnSite();
 async function updateAdviceOnSite()
 {
     document.getElementById("mainText").innerHTML ="Loading . . ."
