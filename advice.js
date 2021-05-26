@@ -1,5 +1,5 @@
 
-updateAdviceOnSite();
+document.getElementById("mainText").innerHTML = "Don't get admitted to NSU";
 async function updateAdviceOnSite()
 {
     document.getElementById("mainText").innerHTML ="Loading . . ."
