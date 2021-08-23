@@ -22,5 +22,5 @@ async function changeGlobalAdvice(res)
     setTimeout( function() {
         document.getElementById("advBtn").disabled = false;
         updateAdviceOnSite();
-      }, 5000)
+      }, 2000)
 }
