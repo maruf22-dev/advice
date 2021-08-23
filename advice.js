@@ -1,7 +1,8 @@
 async function updateAdviceOnSite()
 {
     document.getElementById("mainText").innerHTML ="Loading . . ."
-    getNewAdvice();
+    await getNewAdvice();
+    document.getElementById("advBtn").disabled = true;
     
 }
 async function getNewAdvice()
@@ -12,8 +13,7 @@ async function getNewAdvice()
 async function changeGlobalAdvice(res)
 {    console.log(res);
      var globalAdvice = JSON.parse(res).slip.advice;
-        document.getElementById("mainText").innerHTML = '"' + globalAdvice + '"';
-        
+     document.getElementById("mainText").innerHTML = '"' + globalAdvice + '"';    
 }
 
  function buttonControl()
