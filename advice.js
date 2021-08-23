@@ -2,7 +2,7 @@ async function updateAdviceOnSite()
 {
     document.getElementById("mainText").innerHTML ="Loading . . ."
     await getNewAdvice();
-    document.getElementById("advBtn").disabled = true;
+    document.getElementById("advBtn").disabled = false
     
 }
 async function getNewAdvice()
